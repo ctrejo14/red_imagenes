@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>Red Social de Imágenes</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" >
+    <script src="validaciones3.js"></script>
+    <style type="text/css">
+      <!--
+      #cuadro_recu {
+        position:absolute;
+        left:160px;
+        top:568px;
+        width:1034px;
+        height:254px;
+        z-index:1;
+        background-color: #FFFFFF;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .Estilo1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .Estilo2 {font-size: 24px}
+      .Estilo3 {font-size: 18px}
+      #cuadro_mensaje {
+        position:absolute;
+        left:159px;
+        top:408px;
+        width:1037px;
+        height:135px;
+        z-index:2;
+        background-color: #0033FF;
+      }
+      #cuadro_logo {
+        position:absolute;
+        left:1233px;
+        top:851px;
+        width:79px;
+        height:65px;
+        z-index:3;
+      }
+      -->
+    </style>
+  </head>
+
+  <body>
+    <div id="cuadro_recu">
+      <form id="form1" name="form1" method="post" onSubmit="validar()">
+        <div align="center">
+          <table width="967" border="0" align="center">
+              <tr>
+                <td colspan="2">
+                  <span class="Estilo3">
+                  Nombre de Usuario
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input name="nom_usuario" type="text" id="nom_usuario" size="60" >          
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <span class="Estilo3">
+                  Correo Electrónico
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input name="correo_elec" type="email" id="correo_elec" size="60"placeholder="Correo electrónico" >          
+                </td>
+              </tr>
+              <tr>
+                <td width="404" height="112">
+                  <input name="volver_inicio" type="button" class="boton" id="volver_inicio" value="VOLVER INICIO SESIÓN" onclick="volver()" >          
+                </td>
+                <td width="418" colspan="-1">
+                  <input name="enviar" type="submit" class="boton" id="enviar" value="ENVIAR" >          
+                </td>
+              </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+    <div id="cuadro_mensaje">
+      <p><img src="imagenes/interrogación.png" width="42" height="31" ><span class="Estilo1">¿Has olvidado tu contraseña?</span></p>
+      <p><span class="Estilo2">Para reestablecer su contraseña envíe su nombre de usuario y su correo, si podemos localizarlo en la base de datos le enviaremos un email con instrucciones para acceder de nuevo. </span></p>
+    </div>
+    <div id="cuadro_logo">
+      <img src="imagenes/imagen 1.png" width="82" height="73" >
+    </div>
+    <br>
+    <div align="center">
+      <img src="imagenes/imagen 2.png" alt="banner" width="1024" height="249" >
+    </div>
+    <p align="center">
+      <img src="imagenes/bienvenidos.gif" alt="bienvenido" width="391" height="78" >
+    </p>
+  </body>
+</html>

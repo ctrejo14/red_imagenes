@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<title>Red Social de Imágenes</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css" >
+		<script src="validaciones2.js"></script>
+		<style type="text/css">
+			<!--
+			/*Cuadro1 es un div para  , el div cuadro 2 es para, el cuadro3 es para el icono, el div cuadro 4 es para recuperar la contraseña*/
+			#cuadro3 {
+				position:absolute;
+				left:1148px;
+				top:680px;
+				width:162px;
+				height:91px;
+				z-index:3;
+			}
+			#cuadro_datos {
+				position:absolute;
+				left:302px;
+				top:368px;
+				width:826px;
+				height:272px;
+				z-index:4;
+			}
+			.Estilo1 {font-size: 24px}
+			#cuadro4 {
+				position:absolute;
+				left:28px;
+				top:716px;
+				width:393px;
+				height:55px;
+				z-index:5;
+			}
+			.Estilo2 {font-size: 24px; font-family: Arial, Helvetica, sans-serif; }
+			-->
+		</style>
+	</head>
+
+	<body>
+		<div id="cuadro3">
+			<img src="imagenes/imagen 1.png" width="150" height="83" >        
+		</div>
+		<div class="Estilo2" id="cuadro4">
+			<a href="recuperar_clave.html" target="_self">¿Olvidaste tu contraseña?</a>
+		</div>
+		<form id="form1" name="form1" method="post" onSubmit="validar()"> 
+			<div id="cuadro_datos">
+				<table width="810" height="109" border="0">
+					<tr>
+						<td width="179" height="47">
+							<span class="Estilo1">USUARIO</span>
+						</td>
+						<td width="621">
+							<input type="text" name="usuario" id="usuario" size="52">
+						</td>
+					</tr>
+					<tr>
+						<td height="56">
+							<span class="Estilo1">CONTRASEÑA</span>
+						</td>
+						<td>
+							<input type="password" name="pas_usuario" id="pas_usuario" size="52" >
+						</td>
+					</tr>
+				</table>
+				<p align="center">
+					<input name="iniciar_sesion" type="submit" class="boton" id="iniciar_sesion" value="INICIAR SESION" >
+				</p>
+			</div>
+		</form>
+		<div align="center">
+			<img src="imagenes/imagen 2.png" width="1024" height="249" >
+		</div>
+		<p align="center">
+			<img src="imagenes/bienvenidos.gif" width="391" height="78" >
+		</p>
+	</body>
+</html>

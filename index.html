@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<title>Red Social de Imágenes</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css" >
+		<script language="javascript">
+			function registro(){
+				window.location.href="Registro_usuarios.html";
+			}
+			function sesion(){
+				window.location.href="inicio_sesion.html";
+			}
+		</script>
+		<style type="text/css">
+			<!--
+			/* Cuadro1 es para colocar el video, cuadro2 es para colocar texto cabecera, cuadro3 para la imagen de título*/
+			#cuadro1 {
+				position:absolute;
+				left:24px;
+				top:380px;
+				width:662px;
+				height:309px;
+				z-index:1;
+			}
+			#cuadro2 {
+				position:absolute;
+				left:24px;
+				top:704px;
+				width:768px;
+				height:108px;
+				z-index:2;
+			}
+			#cuadro3 {
+				position:absolute;
+				left:1221px;
+				top:768px;
+				width:91px;
+				height:68px;
+				z-index:3;
+			}
+			#cuadro_botones {
+				position:absolute;
+				left:837px;
+				top:416px;
+				width:328px;
+				height:241px;
+				z-index:4;
+			}
+			-->
+		</style>
+	</head>
+
+	<body>
+		<div id="cuadro2">
+			<h1>Muestra tus imágenes</h1>
+			<div align="justify">
+				Si te gusta hacer fotos y quieres dar a conocer tu obra en Internet, una buena forma de hacerlo es mediante las redes sociales de fotografía. Estas comunidades de usuarios permiten a los fotógrafos , amateur y profesionales, compartir sus creaciones, aprender técnicas y ampliar sus contactos
+			</div>
+		</div>
+		<div id="cuadro3">
+			<img src="imagenes/imagen 1.png" width="86" height="60" >
+		</div>
+		<div id="cuadro_botones">
+			<p>
+				<input type="button" name="Registro" id="Registro" value="REGISTRO" class="boton" onclick="registro()">
+			</p>
+			<p>  
+				<input type="button" name="iniciar_sesion" id="iniciar_sesion" value="INICIAR SESIÓN" class="boton" onclick="sesion()" >
+			</p>
+		</div>
+		<div align="center">
+			<img src="imagenes/imagen 2.png" width="1024" height="249" >
+		</div>
+		<p align="center">
+			<img src="imagenes/bienvenidos.gif" width="391" height="78" >
+		</p>
+		<div  id="cuadro1">
+			<video src="videos/video.mp4" controls autoplay loop width="450px"> No se puede mostrar el video </video>
+		</div>
+	</body>
+</html>

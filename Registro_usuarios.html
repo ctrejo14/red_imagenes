@@ -1,0 +1,91 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>Red Social de Imágenes</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" >
+    <script src="validaciones.js"></script>
+    <style type="text/css">
+      <!--
+      #cuadro_formulario {
+        position:absolute;
+        left:70px;
+        top:17px;
+        width:536px;
+        height:284px;
+        z-index:1;
+      }
+      #divimagen {
+        position:absolute;
+        left:617px;
+        top:19px;
+        width:601px;
+        height:189px;
+        z-index:2;
+      }
+      #cuadro_logo {
+        position:absolute;
+        left:1111px;
+        top:380px;
+        width:113px;
+        height:90px;
+        z-index:3;
+      }
+      .Estilo2 {font-size: 18px}
+      .Estilo3 {font-size: 24px}
+      -->
+    </style>
+  </head>
+
+  <body>
+    <div id="cuadro_formulario">
+      <form id="form1" name="form1" method="post" onsubmit="validar()">
+        <table width="520" border="0">
+          <tr>
+            <td colspan="2">
+              <span class="Estilo3">Nombre de usuario</span>:<br>
+              <input name="nom_usuario" type="text" id="nom_usuario" size="52" >            
+            </td>
+          </tr>
+          <tr>
+            <td width="219">
+              <span class="Estilo3">Nombres</span>:<br>
+              <input type="text" name="nombre" id="nombre" >
+            </td>
+            <td width="291">
+              <span class="Estilo3">Apellidos</span>: <br>
+              <input type="text" name="apellido" id="apellido" >            
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <span class="Estilo2"><span class="Estilo3">Correo electrónico</span>:</span> <br>
+              <input name="correo" type="email" id="correo" size="52" placeholder="Correo electrónico" >            
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <span class="Estilo3">Contraseña: </span><br>
+              <input name="contraseña" type="password" id="contraseña" size="52" >            
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <span class="Estilo3">Confirmar Contraseña</span>:<br>
+              <input name="conf_contraseña" type="password" id="conf_contraseña" size="52" >            
+            </td>
+          </tr>
+        </table>
+        <p align="center">
+          <input name="reg_usuario" type="submit" class="boton" id="reg_usuario" value="REGISTRATE" >
+        </p>
+      </form>
+    </div>
+    <div id="divimagen">
+      <img src="imagenes/imagen 2.png" width="591" height="181" >
+    </div>
+    <div id="cuadro_logo">
+      <img src="imagenes/imagen 1.png" width="109" height="87" >
+    </div>
+  </body>
+</html>
